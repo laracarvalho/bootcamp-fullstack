@@ -238,7 +238,7 @@ const { brand: { name } } = car;
 Se não quisermos utilizar alguma propriedade de um objeto, podemos utilizar a keyword delete para removê-la:
 
 ```js
-delete color;
+delete car.color;
 
 car // Object { brand: { name: 'Ford ' }}
 ```
