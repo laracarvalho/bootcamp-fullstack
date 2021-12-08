@@ -58,10 +58,13 @@ No código acima, é claro o meu objeto user está pedindo para suas propriedade
 ## Como iniciar um projeto Typescript
 Passo a passo rápido.
 
-- Inicie um projeto Node.js com `package.json`. (`npm init -y`);
-- Instale TypeScript (`npm install typescript --save-dev`);
-- Adicione o arquivo de tipagem para node `node.d.ts` (`npm install @types/node --save-dev`)
-- Crie um arquivo `tsconfig.json` para configurações do TypeScript:
+Passo a passo rápido.
+
+- Inicie um projeto Node.js com package.json. (`npm init -y`);
+- Instale TypeScript globalmente (`npm install typescript -g`);
+- Instale TypeScript como dependência de desenvolvimento (`npm install typescript --save-dev`);
+- Adicione o arquivo de tipagem para node node.d.ts (`npm install @types/node --save-dev`)
+- Crie um arquivo tsconfig.json para configurações do TypeScript (`tsc --init`):
 	- rootDir: `/src`
 	- outDir: `/build`
 	- module: `commonjs`
@@ -69,10 +72,12 @@ Passo a passo rápido.
 	- typeRoots: `["./src/@types", "./node_modules/@types"]`
 	- allowJs: `true` (se não souber se todas as libs tem suporte para TS)
 	- moduleResolution: `node`
+- Instale `ts-node` globalmente (`npm install ts-node -g`);
 - Instale `ts-node` para podermos compilar rapidamente TS para Node (`npm install ts-node --save-dev`);
 - Instale `nodemon` para podermos utilizar `ts-node` todas as vezes que qualquer arquivo mudar (`npm install nodemon --save-dev`);
 - Adicionando um script para garantir o funcionamento rápido:
-	- dev: `"nodemon --transpile-only --files ./src/{server}.ts --ignore ./tests`
+	- dev: `"nodemon exec --transpile-only --files ./src/{server}.ts --ignore ./tests`
+		- Não esqueça de trocar {server} por seu arquivo principal;
 
 ## Sintaxes e Dados
 
@@ -190,16 +195,16 @@ Depois, é possível combinar tais estruturas para que nossos objetos se tornem 
 
 ```ts
 enum NatureTypes {
-    Human = 'human',
+	Human = 'human',
 	Robot = 'robot',
 	Animal = 'animal'
 }
 
 interface Entity {
- natureType: NatureTypes;
- name: string;
- code?: number;
- birthdate?: number;
+	natureType: NatureTypes;
+	name: string;
+	code?: number;
+	birthdate?: number;
 }
 
 const person: Entity = {
