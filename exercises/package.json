@@ -1,0 +1,20 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "engines": {
+    "node": "14"
+  },
+  "scripts": {
+    "start": "ts-node ./src"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}
