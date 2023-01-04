@@ -18,12 +18,12 @@ const _const = 1;
 O mais recente padrão ECMAScript define sete tipos de dados:
 
 Seis tipos de dados são os chamados [primitivos](https://developer.mozilla.org/pt-BR/docs/Glossary/Primitive):
-    -   [Boolean](https://developer.mozilla.org/pt-BR/docs/Glossary/Boolean). `true` e `false`.
-    -   [null](https://developer.mozilla.org/pt-BR/docs/Glossary/Null). Uma palavra-chave que indica valor nulo. Devido JavaScript ser case-sensitive, `null` não é o mesmo que `Null`, `NULL`, ou ainda outra variação.
-    -   [undefined](https://developer.mozilla.org/pt-BR/docs/Glossary/undefined). Uma propriedade superior cujo valor é indefinido.
-    -   [Number](https://developer.mozilla.org/pt-BR/docs/Glossary/Number). `42` ou `3.14159`.
-    -   [String](https://developer.mozilla.org/pt-BR/docs/Glossary/String). "Howdy"
-    -   [Symbol](https://developer.mozilla.org/pt-BR/docs/Glossary/Symbol) (novo em ECMAScript 6). Um tipo de dado cuja as instâncias são únicas e imutáveis.
+-   [Boolean](https://developer.mozilla.org/pt-BR/docs/Glossary/Boolean). `true` e `false`.
+-   [null](https://developer.mozilla.org/pt-BR/docs/Glossary/Null). Uma palavra-chave que indica valor nulo. Devido JavaScript ser case-sensitive, `null` não é o mesmo que `Null`, `NULL`, ou ainda outra variação.
+-   [undefined](https://developer.mozilla.org/pt-BR/docs/Glossary/undefined). Uma propriedade superior cujo valor é indefinido.
+-   [Number](https://developer.mozilla.org/pt-BR/docs/Glossary/Number). `42` ou `3.14159`.
+-   [String](https://developer.mozilla.org/pt-BR/docs/Glossary/String). "Howdy"
+-   [Symbol](https://developer.mozilla.org/pt-BR/docs/Glossary/Symbol) (novo em ECMAScript 6). Um tipo de dado cuja as instâncias são únicas e imutáveis.
 
 > _Trecho tirado de [Mozilla Docs](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Grammar_and_types)_
 
